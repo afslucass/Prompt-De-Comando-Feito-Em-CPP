@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Prompt" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/Prompt" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-std=c17" />
+					<Add option="-g" />
+					<Add directory="../../../../../../Documents/libraries_cpp/boost_1_69_0" />
+				</Compiler>
+				<Linker>
+					<Add library="../../../../../../Documents/libraries_cpp/boost_1_69_0/stage/lib/libboost_filesystem-mgw49-mt-x64-1_69.a" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/Prompt" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Unit filename="action.cpp" />
+		<Unit filename="headers.h" />
+		<Unit filename="input.cpp" />
+		<Unit filename="loop.cpp" />
+		<Unit filename="main.cpp" />
+		<Extensions>
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
